@@ -26,6 +26,8 @@ public class FirstActivity extends AppCompatActivity {
     Button more_button;
     ImageView imageView;
 
+    //test
+
     static FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
