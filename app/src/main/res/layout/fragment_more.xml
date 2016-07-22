@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="通过蓝牙传输文件"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/bluetooth_button"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="将文件上传到云盘"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/upload_button"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="从云盘中下载文件"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/download_button"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="与PC端的文件传输"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/pc_file_btn"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="文件管理"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/file_manager"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/setup_button"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape4"
+            android:text="关于"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/about_button"
+            />
+    </LinearLayout>
+
+</LinearLayout>

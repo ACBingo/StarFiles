@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical"
+    android:background="@drawable/filechoose_linearlayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+        <!-- 列出当前路径下的所有文件-->
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000"
+            android:dividerHeight="1px"
+            />
+    </LinearLayout>
+    <!-- 显示当前路径的文本框 -->
+
+
+    <!--  返回上一级目录 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="上一层"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/parent"
+            android:layout_height="wrap_content" />
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/confirm"
+            android:layout_height="wrap_content" />
+
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="查看"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/SelectedPathList"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_background"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:id="@+id/waveLoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            app:wlv_borderColor="#ffffff"
+            app:wlv_borderWidth="1dp"
+            app:wlv_progressValue="0"
+            app:wlv_shapeType="circle"
+
+            app:wlv_titleBottomColor="#fff"
+
+            app:wlv_titleTopColor="#fff"
+
+            app:wlv_titleCenter="0%"
+            app:wlv_titleCenterColor="#fff"
+            app:wlv_titleCenterSize="24sp"
+
+            app:wlv_waveAmplitude="50"
+            app:wlv_waveColor="#32ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center">
+        <su.levenetc.android.badgeview.BadgeView
+            android:id="@+id/badge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:badgeBackgroundColor="#ffffff"
+            app:badgeText="请选择文件"
+            app:badgeTextColor="@color/ripple_background"
+            app:badgeAnimationDuration="1000"
+            app:badgePadding="16dp"
+            app:badgeTextSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="选择文件"
+            android:tag="0"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/choosefile"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_background"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:background="@color/ripple_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+            <com.skyfishjy.library.RippleBackground
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/ripple"
+                app:rb_color="#fff"
+                app:rb_radius="32dp"
+                app:rb_rippleAmount="4"
+                app:rb_duration="2500"
+                app:rb_type="strokeRipple"
+                app:rb_scale="8">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/send_ripple_Image"
+                    android:src="@drawable/phone1"
+                    />
+            </com.skyfishjy.library.RippleBackground>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <su.levenetc.android.badgeview.BadgeView
+                android:id="@+id/badge_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:badgeBackgroundColor="#fff"
+                app:badgeText="正在初始化"
+                app:badgeTextColor="@color/ripple_background"
+                app:badgeAnimationDuration="1000"
+                app:badgePadding="16dp"
+                app:badgeTextSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

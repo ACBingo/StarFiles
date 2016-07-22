@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="所有文件已经接收完成!"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.rey.material.widget.Button
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:text="查看文件"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                app:rd_enable="true"
+                app:rd_rippleType="wave"
+                app:rd_maskType="rectangle"
+                app:rd_cornerRadius="50dp"
+                android:id="@+id/check_btn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.rey.material.widget.Button
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:text="返回到主界面"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                app:rd_enable="true"
+                app:rd_rippleType="wave"
+                app:rd_maskType="rectangle"
+                app:rd_cornerRadius="50dp"
+                android:id="@+id/exit"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

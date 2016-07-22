@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_background"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:padding="15dp">
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_gravity="center"
+            android:id="@+id/waveLoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space_middle"
+            app:wlv_borderColor="#ffffff"
+            app:wlv_borderWidth="1dp"
+            app:wlv_progressValue="0"
+            app:wlv_shapeType="circle"
+
+            app:wlv_titleCenter="0%"
+            app:wlv_titleCenterColor="#fff"
+            app:wlv_titleCenterSize="24sp"
+
+            app:wlv_waveAmplitude="50"
+            app:wlv_waveColor="#32ffffff">
+        </me.itangqi.waveloadingview.WaveLoadingView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+        <com.example.acbingo.myfinaltest10.FileTransmissionUIService.widget.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id = "@+id/HintText"
+                android:textColor="#fff"
+                android:textSize="27dp"
+                android:layout_gravity="center" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

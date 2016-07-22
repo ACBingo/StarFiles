@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tabs" type="id"/>
+    <item name="header" type="id"/>
+    <item name="viewpager" type="id"/>
+    <item name="layout" type="id"/>
+</resources>

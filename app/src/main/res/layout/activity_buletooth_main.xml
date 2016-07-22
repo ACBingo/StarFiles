@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/ripple_background"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:padding="15dp">
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_gravity="center"
+            android:id="@+id/waveLoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space_middle"
+            app:wlv_borderColor="#ffffff"
+            app:wlv_borderWidth="1dp"
+            app:wlv_progressValue="0"
+            app:wlv_shapeType="circle"
+
+            app:wlv_titleCenter="蓝牙"
+            app:wlv_titleCenterColor="#fff"
+            app:wlv_titleCenterSize="24sp"
+
+            app:wlv_waveAmplitude="50"
+            app:wlv_waveColor="#32ffffff">
+        </me.itangqi.waveloadingview.WaveLoadingView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:padding="15dp">
+        <su.levenetc.android.badgeview.BadgeView
+            android:id="@+id/badge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:badgeBackgroundColor="#fff"
+            app:badgeText="正在初始化"
+            app:badgeTextColor="@color/ripple_background"
+            app:badgeAnimationDuration="1000"
+            app:badgePadding="16dp"
+            app:badgeTextSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rey.material.widget.Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="配对"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/peidui_btn"
+            android:layout_height="wrap_content" />
+        <com.rey.material.widget.Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="打开可见"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/ensure_discoverable_btn"
+            android:layout_height="wrap_content" />
+        <com.rey.material.widget.Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="选择文件"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/bluetooth_main_choosefile_btn"
+            android:layout_height="wrap_content" />
+
+        <com.rey.material.widget.Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="发送"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/bluetooth_main_btn_send"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="18dp"
+            android:text="与pc进行通讯"
+            android:textSize="32dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape2"
+            android:text="receive"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/receive_btn"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.rey.material.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape2"
+            android:text="send"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"
+            app:rd_maskType="rectangle"
+            app:rd_cornerRadius="50dp"
+            android:id="@+id/send_btn"
+            />
+    </LinearLayout>
+
+</LinearLayout>

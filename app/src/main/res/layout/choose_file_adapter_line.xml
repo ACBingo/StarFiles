@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="horizontal">  
+    <ImageView   
+            android:id="@+id/line_image"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:background="@drawable/folder"
+            />
+    <TextView
+            android:id="@+id/line_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/line_image"
+            android:layout_toRightOf="@+id/line_image"
+            android:text="test jhfwe sadf"
+            android:textColor="#fff" />
+        <ImageView
+            android:id="@+id/line_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_check_off_holo_light"
+            android:paddingRight="0dp"
+            android:src="@layout/filemanager_button_on_off_selector"/>
+
+</RelativeLayout>  
